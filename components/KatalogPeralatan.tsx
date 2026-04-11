@@ -1,4 +1,9 @@
-const peralatan = [
+"use client";
+
+import Image from "next/image";
+
+export default function KatalogPeralatan() {
+  const peralatan = [
   { 
     name: "Sound System", 
     desc: "Kami memastikan setiap kata dan lantunan nada terdengar sempurna. Kami menyajikan sound system berkualitas yang menghasilkan suara jernih dan detail, membuat pesan acara Anda tersampaikan dengan baik.", 
@@ -50,3 +55,47 @@ const peralatan = [
     image: "/images/katalog/Kipas-Embun.png" 
   },
 ];
+
+  return (
+    <section id="katalog" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">
+            Katalog Peralatan Event
+          </h2>
+          <p className="text-xl text-gray-600">
+            Peralatan lengkap berkualitas tinggi untuk mendukung kesuksesan acara Anda
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {peralatan.map((item, index) => (
+            <div 
+              key={index}
+              className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
+            >
+              <div className="relative h-64 bg-gray-100 flex items-center justify-center p-6">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={380}
+                  height={280}
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="p-7">
+                <h3 className="text-2xl font-bold text-emerald-900 mb-4">
+                  {item.name}
+                </h3>
+                <div className="text-gray-700 leading-relaxed text-[15.5px] h-44 overflow-y-auto pr-3">
+                  {item.desc}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
