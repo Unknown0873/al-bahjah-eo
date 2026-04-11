@@ -11,9 +11,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // eslint dihapus karena tidak didukung lagi di Next.js 16
 };
 
 module.exports = nextConfig;
