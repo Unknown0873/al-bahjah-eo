@@ -9,10 +9,10 @@ const nextConfig = {
     ],
   },
   typescript: {
-    ignoreBuildErrors: true,     // ← Ini yang penting
+    ignoreBuildErrors: true,
   },
   eslint: {
-    ignoreDuringBuilds: true,    // ← Ini juga
+    ignoreDuringBuilds: true,
   },
 };
 
