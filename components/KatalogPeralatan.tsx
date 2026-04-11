@@ -34,13 +34,13 @@ export default function KatalogPeralatan() {
               key={index}
               className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
-              {/* Image Container - Tidak Terpotong */}
-              <div className="relative h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+              <div className="relative h-64 bg-gray-100 flex items-center justify-center p-6">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  fill
-                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  width={380}
+                  height={280}
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -48,7 +48,7 @@ export default function KatalogPeralatan() {
                 <h3 className="text-2xl font-bold text-emerald-900 mb-4">
                   {item.name}
                 </h3>
-                <div className="text-gray-700 leading-relaxed text-[15.2px] h-44 overflow-y-auto pr-3 custom-scroll">
+                <div className="text-gray-700 leading-relaxed text-[15.5px] h-44 overflow-y-auto pr-3">
                   {item.desc}
                 </div>
               </div>
