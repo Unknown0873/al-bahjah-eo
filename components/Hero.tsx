@@ -35,7 +35,7 @@ export default function Hero() {
         {/* Tombol - sudah diperbaiki untuk HP */}
         <div className="flex flex-col gap-4 items-center max-w-xs mx-auto">
           <a
-            href="#portfolio"
+            href="#portofolio"
             className="w-full bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-bold text-base py-3.5 rounded-2xl transition-all text-center"
           >
             Lihat Portfolio Kami
