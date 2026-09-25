@@ -1,38 +1,42 @@
 "use client";
+
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      
-      {/* Background Image */}
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+    >
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-background.png"   // ← Ganti dengan nama file kamu
+          src="/images/hero-background.png"
           alt="Background Event"
           fill
           className="object-cover"
           priority
         />
-        {/* Overlay gelap supaya teks tetap jelas */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-emerald-900/60 to-black/70"></div>
       </div>
 
-      {/* Content Teks */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Acara Ngga Cuman Berkesan,<br />
+      {/* Content */}
+      <div className="relative z-10 text-center px-5 max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+          Acara Ngga Cuman Berkesan,
+          <br />
           <span className="text-yellow-400">Tapi InsyaAllah Berkah</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8">
           Layanan Event Organizer Syar&apos;i dari Al-Bahjah Cirebon
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        {/* Tombol - sudah diperbaiki untuk HP */}
+        <div className="flex flex-col gap-4 items-center max-w-xs mx-auto">
           <a
             href="#portfolio"
-            className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-bold text-lg px-10 py-4 rounded-2xl transition-all duration-300 inline-block"
+            className="w-full bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-bold text-base py-3.5 rounded-2xl transition-all text-center"
           >
             Lihat Portfolio Kami
           </a>
@@ -40,14 +44,14 @@ export default function Hero() {
           <a
             href="https://wa.me/6281111111703"
             target="_blank"
-            className="border-2 border-white text-white hover:bg-white hover:text-emerald-900 font-bold text-lg px-10 py-4 rounded-2xl transition-all duration-300 inline-block"
+            className="w-full border-2 border-white text-white hover:bg-white hover:text-emerald-900 font-bold text-base py-3.5 rounded-2xl transition-all text-center"
           >
             Konsultasi Gratis
           </a>
         </div>
 
-        <p className="text-white/80 text-base md:text-lg">
-          Melayani pemesanan wilayah Pulau Jawa &amp; sekitarnya
+        <p className="text-white/80 text-sm mt-10">
+          Melayani pemesanan wilayah Pulau Jawa & sekitarnya
         </p>
       </div>
     </section>
