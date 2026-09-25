@@ -30,7 +30,7 @@ export default function Portofolio() {
   ];
 
   return (
-    <section id="portofolio" className="py-24 bg-white">
+    <section id="portfolio" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-bold text-emerald-900 text-center mb-16">
           Galeri Foto
