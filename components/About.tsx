@@ -31,7 +31,7 @@ export default function About() {
               <img 
                 src="/images/about-eo.png" 
                 alt="Manager Al-Bahjah" 
-                className="rounded-[2rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-square shadow-emerald-900/10"
+                className="rounded-[2rem] shadow-2xl w-full object-cover aspect-[4/5] shadow-emerald-900/10"
               />
               {/* Aksen dekoratif tipis di desktop */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border-t-4 border-r-4 border-emerald-200 rounded-tr-3xl -z-10 hidden lg:block"></div>
